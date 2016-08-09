@@ -1,0 +1,46 @@
+<svg version="1.0" id="main-caption" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1800 1200" enable-background="new 0 0 1800 1200" xml:space="preserve">
+<path fill="#1B2B79" d="M1052.3,593l19.2-58h87.1l-29-62H642.7l34.1,62h50l21.9,58H1052.3z">
+	<animate id="svg-poly" attributeName="d"
+		values="M915.3,547l5.2-12h9.5l-6-13h-17.8l6.1,13h-11.4l6.9,12H915.3z;
+			M973.9,593l19.2-58h44.1l-29-62h-252l34.1,62H811l21.9,58H973.9z;
+			M1052.3,593l19.2-58h87.1l-29-62H642.7l34.1,62h50l21.9,58H1052.3z"
+		dur="0.8s"
+		repeatCount="1"
+		begin="indefinite" />
+</path>
+<circle id="c1" fill="#1B2B79" cx="747.7" cy="594.5" r="8.5">
+	<animate id="svg-circle1" attributeName="r"
+		values="1;8.5"
+		dur="0.8s"
+		repeatCount="1"
+		begin="indefinite" />
+</circle>
+<circle id="c2" fill="#1B2B79" cx="643.6" cy="473.6" r="4.3">
+	<animate id="svg-circle2" attributeName="r"
+		values="1;4.3"
+		dur="0.8s"
+		repeatCount="1"
+		begin="indefinite" />
+</circle>
+<circle id="c3" fill="#1B2B79" cx="1128.8" cy="473.2" r="6.8">
+	<animate id="svg-circle3" attributeName="r"
+		values="1;6.8"
+		dur="0.8s"
+		repeatCount="1"
+		begin="indefinite" />
+</circle>
+<circle id="c4" fill="#1B2B79" cx="1157.4" cy="534.5" r="4.3">
+	<animate id="svg-circle4" attributeName="r"
+		values="1;4.3"
+		dur="0.8s"
+		repeatCount="1"
+		begin="indefinite" />
+</circle>
+<circle id="c5" fill="#1B2B79" cx="1052.5" cy="592.5" r="4.3">
+	<animate id="svg-circle5" attributeName="r"
+		values="1;4.3"
+		dur="0.8s"
+		repeatCount="1"
+		begin="indefinite" />
+</circle>
+</svg>

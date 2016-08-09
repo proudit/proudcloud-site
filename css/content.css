@@ -1,0 +1,1167 @@
+@charset "utf-8";
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans Japanese';
+   font-style: normal;
+   font-weight: 700;
+   src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');
+}
+
+/*
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../font/NotoSansDemiLight/NotoSansCJKjp-DemiLight.eot);
+  src: url(../font/NotoSansDemiLight/NotoSansCJKjp-DemiLight.eot?#iefix) format('embedded-opentype'),
+       url(../font/NotoSansDemiLight/NotoSansCJKjp-DemiLight.woff2) format('woff2'),
+       url(../font/NotoSansDemiLight/NotoSansCJKjp-DemiLight.woff) format('woff'),
+       url(../font/NotoSansDemiLight/NotoSansCJKjp-DemiLight.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/NotoSansBold/NotoSansCJKjp-Bold.eot);
+  src: url(../font/NotoSansBold/NotoSansCJKjp-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../font/NotoSansBold/NotoSansCJKjp-Bold.woff2) format('woff2'),
+       url(../font/NotoSansBold/NotoSansCJKjp-Bold.woff) format('woff'),
+       url(../font/NotoSansBold/NotoSansCJKjp-Bold.otf) format('opentype');
+ }
+ */
+ 
+ 
+
+
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+body {
+	line-height:1;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+	display:block;
+}
+
+ul,
+ol,
+li {
+	list-style:none;
+}
+
+a {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img {
+	vertical-align: bottom;
+}
+em {
+	font-style: normal;
+}
+table {
+	border-collapse: collapse;
+}
+
+
+input, select {
+	vertical-align:middle;
+}
+
+
+::-moz-selection {
+	color: #fff;
+	background: #00a0e9;
+}
+::selection {
+	color: #fff;
+	background: #00a0e9;
+}
+
+
+
+
+html,
+body {
+	overflow-x: hidden;
+}
+body {
+	margin: 0 auto;
+	font-weight: 300;
+	font-family: "Noto Sans Japanese", sans-serif;
+	color: #3a3a3a;
+	background: #fff;
+}
+a {
+	color: #3a3a3a;
+}
+
+
+
+
+i.icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+i.icon.ec2 {
+	background: url(../img/icon/ec2.svg) 50% 50% no-repeat;
+}
+i.icon.rds {
+	background: url(../img/icon/rds.svg) 50% 50% no-repeat;
+}
+i.icon.s3 {
+	background: url(../img/icon/s3.svg) 50% 50% no-repeat;
+}
+i.icon.route53 {
+	background: url(../img/icon/route53.svg) 50% 50% no-repeat;
+}
+i.icon.elb {
+	background: url(../img/icon/elb.svg) 50% 50% no-repeat;
+}
+i.icon.scaling {
+	background: url(../img/icon/scaling.svg) 50% 50% no-repeat;
+}
+i.icon.cache {
+	background: url(../img/icon/cache.svg) 50% 50% no-repeat;
+}
+i.icon.iam {
+	background: url(../img/icon/iam.svg) 50% 50% no-repeat;
+}
+
+
+nav.return {
+	position: absolute;
+}
+nav.return a {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	top: 0;
+	font-size: 0;
+	text-decoration: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url(../img/btn_toppage.svg) 100% 0 no-repeat;
+	background-size: 100% auto;
+}
+nav.return a:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	right: 0;
+	top: 0;
+	background: url(../img/label_toppage.svg) 50% 50% no-repeat;
+	background-size: 100% auto;
+}
+
+
+
+
+#content .serverless .plan-detail dl dl dd span:before {
+	background: #1ecbd3;
+}
+#content .server .plan-detail dl dl dd span:before {
+	background: #ff9d00;
+}
+#content .container .plan-detail dl dl dd span:before {
+	background: #00c2ef;
+}
+
+
+
+@media screen and (min-width: 781px) {
+	body {
+		max-width: 1800px;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	
+	i.icon {
+		width: 26px;
+		height: 26px;
+		margin-right: 12px;
+		background-size: 100% auto !important;
+	}
+	
+	nav.return {
+		width: 60px;
+		height: 60px;
+		right: 3px;
+		top: 3px;
+	}
+	nav.return a {
+		width: 80px;
+		height: 80px;
+		background-size: 60px 60px;
+		transition: all 200ms ease-out;
+	}
+	nav.return a:hover {
+		background-size: 95px 95px;
+	}
+	nav.return a:before {
+		width: 60px;
+		height: 60px;
+	}
+	
+	
+	
+	
+	#wrap {
+		min-width: 1000px;
+		margin: 0 auto;
+	}
+	#wrap > header {
+		position: relative;
+		height: auto;
+		z-index: 100;
+		padding-top: 33.34%;
+	}
+	#wrap > header .logo {
+		position: absolute;
+		width: 73px;
+		height: 69px;
+		left: 40px;
+		top: 20px;
+		z-index: 100;
+	}
+	#wrap > header .budge {
+		position: absolute;
+		width: 200px;
+		height: 86px;
+		right: 20px;
+		top: 20px;
+		z-index: 100;
+		border: 1px solid #00a0e9;
+		border-radius: 4px;
+		overflow: hidden;
+		background: #fff;
+	}
+	
+	
+	#visual {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		min-width: 1000px;
+		left: 0;
+		top: 0;
+		z-index: 50;
+		padding-top: 33.34%;
+		background: url(../img/kv_mini.svg) 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	#visual h1 {
+		position: absolute;
+		width: 44%;
+		height: 25%;
+		left: 50%;
+		top: 30%;
+		margin-left: -22%;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	#visual h1 a {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	#visual h2,
+	#visual .lead {
+		display: none;
+	}
+	#visual .motion {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+	#visual .motion svg {
+		width: 100%;
+		height: auto;
+	}
+	
+	
+	
+	
+	#wrap > footer {
+		position: relative;
+		box-sizing: border-box;
+		padding: 115px 0 0;
+		height: 300px;
+		text-align: center;
+		background: url(../img/footer.svg) 50% 100% no-repeat;
+		background-size: 100% auto;
+	}
+	#wrap > footer .logo {
+		display: block;
+		width: 73px;
+		height: 69px;
+		margin: 0 auto;
+	}
+	#wrap > footer p {
+		margin: 24px 0 0;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		background: url(../img/copyright.svg) 50% 0 no-repeat;
+		background-size: auto 13px;
+	}
+	
+	
+	
+	#content br.soft {
+		display: none;
+	}
+	
+	
+	
+	#content h1 {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	#content section {
+		position: relative;
+		box-sizing: border-box;
+		width: 1000px;
+		min-height: 200px;
+		margin: 0 auto;
+		padding: 50px;
+		border: 4px solid #1b2b79;
+		background: #fff;
+	}
+	#content section + section {
+		margin-top: 10px;
+	}
+	
+	body.casestudy #content h1 {
+		margin-top: -9%;
+		padding-top: 23.34%;
+		background: url(../img/pagetitle_casestudy.svg) 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	body.casestudy #content h1 + section {
+		margin-top: -10%;
+	}
+	
+	
+	body.ourplan #content h1 {
+		margin-top: -14.5%;
+		padding-top: 17.78%;
+		background: url(../img/pagetitle_ourplan.svg) 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	body.ourplan #content h1 + section {
+	}
+	
+	body.contact #content h1 {
+		margin-top: -13%;
+		padding-top: 15.45%;
+		background: url(../img/pagetitle_contact.svg) 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	body.contact #content h1 + section {
+	}
+	
+	
+	#content figure.main {
+		text-align: center;
+	}
+	#content figure.fig {
+		text-align: center;
+		margin: 0 0 65px;
+	}
+	#content figure.main img {
+		border: 1px solid #dcdddd;
+	}
+	
+	#content .company {
+		position: relative;
+		height: 670px;
+	}
+	#content .company figure.main {
+		position: absolute;
+		width: 100%;
+		height: 442px;
+		left: 0;
+		top: 0;
+	}
+	#content .company dl {
+		position: absolute;
+		width: 100%;
+		height: 230px;
+		left: 0;
+		top: 505px;
+	}
+	#content .company dt {
+		width: 87px;
+		height: 39px;
+		margin: 0 auto;
+	}
+	#content .company dd {
+		margin: 20px 0 0;
+		text-align: center;
+		color: #1b2b79;
+		font-size: 36px;
+	}
+	#content .company h2 {
+		font-weight: 300;
+	}
+	
+	
+	
+	
+	#content .plan-name {
+		margin: 0 0 50px;
+	}
+	#content .plan-name dt {
+		height: 38px;
+		text-align: center;
+	}
+	#content .plan-name dt img {
+		width: auto;
+		height: 38px;
+	}
+	#content .plan-name dd {
+		margin: 20px 0 35px;
+		text-align: center;
+		color: #1b2b79;
+		font-size: 40px;
+	}
+	#content .plan-name h2 {
+		font-weight: 300;
+	}
+	#content .plan-name p {
+		font-size: 18px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 1.7;
+	}
+	
+	#content .plan-name figure.fig {
+		margin-top: 50px;
+	}
+	
+	#content .plan-name dl:before {
+		content: "";
+		display: block;
+		height: 162px;
+		margin: 0 0 40px;
+	}
+	#content .plan-name.serverless dl:before {
+		background: url(../img/chara_serverless.svg) 52% 50% no-repeat;
+		background-size: auto 162px;
+	}
+	#content .plan-name.server dl:before {
+		background: url(../img/chara_server.svg) 53% 50% no-repeat;
+		background-size: auto 162px;
+	}
+	#content .plan-name.container dl:before {
+		background: url(../img/chara_container.svg) 54% 50% no-repeat;
+		background-size: auto 162px;
+	}
+	
+	
+	
+	#content article.feature,
+	#content article.scene {
+		display: table-cell;
+		width: 50%;
+	}
+	#content article + article.scene {
+		margin-top: 0;
+	}
+	#content article.scene p {
+		font-size: 18px;
+	}
+	
+	
+	
+	#content .plan {
+		margin-top: 60px !important;
+	}
+	#content .plan h4 {
+		font-size: 22px;
+		font-weight: 700;
+		color: #1b2b79;
+	}
+	#content .plan-detail {
+		padding: 30px;
+		border: 2px solid #1b2b79;
+	}
+	#content .plan-detail > dl {
+		display: table-cell;
+		width: 414px;
+	}
+	#content .plan-detail > dl > dt {
+		color: #1b2b79;
+		margin: 0 0 20px;
+		font-size: 16px;
+	}
+	#content .plan-detail .mark li {
+	}
+	
+	
+	#content .plan-detail dl dl + dl {
+		margin-top: 15px;
+	}
+	#content .plan-detail dl dl dt {
+		display: table-cell;
+		width: 120px;
+		font-size: 15px;
+		vertical-align: middle;
+	}
+	#content .plan-detail dl dl dt:after {
+		content: "　/";
+		font-size: 20px;
+	}
+	#content .plan-detail dl dl dd {
+		display: table-cell;
+		width: 200px;
+		font-size: 42px;
+		font-weight: 300;
+		font-family: Lato, sans-serif;
+	}
+	#content .plan-detail dl dl dd span {
+		position: relative;
+		display: inline-block;
+		color: #1b2b79;
+		z-index: 10;
+	}
+	#content .plan-detail dl dl dd span:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 8px;
+		left: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+	#content .plan-detail dl dl dd span em {
+		position: relative;
+		z-index: 11;
+	}
+	#content .plan-detail dl dd p {
+		font-size: 18px;
+	}
+	
+	
+	
+	
+	
+	#content article {
+	}
+	#content article + article {
+		margin-top: 30px;
+	}
+	#content article h3 {
+		margin: 0 0 40px;
+		font-size: 26px;
+		font-weight: 300;
+		text-align: center;
+		color: #1b2b79;
+	}
+	#content article h4 {
+		margin: 0 0 12px;
+		font-size: 15px;
+		font-weight: 700;
+		color: #1b2b79;
+	}
+	#content article h5 {
+		margin: 0 0 18px;
+		font-size: 22px;
+		font-weight: 700;
+		color: #1b2b79;
+	}
+	#content article p {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.7;
+	}
+	#content article p + p {
+		margin-top: 1em;
+	}
+	#content article p em {
+		color: #1b2b79;
+	}
+	
+	#content article.notice p {
+		font-size: 18px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 1.7;
+	}
+	
+	
+	#content ul.box {
+		padding: 20px;
+		border: 2px solid #1b2b79;
+	}
+	#content ul.box li {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.7;
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+	#content ul.box li:before {
+		content: "・";
+		text-indent: 0;
+	}
+	#content ul.box li + li {
+		margin-top: 5px;
+	}
+	
+	#content ul.mark li {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.7;
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+	#content ul.mark li:before {
+		content: "・";
+		text-indent: 0;
+	}
+	#content ul.mark li + li {
+		margin-top: 5px;
+	}
+	
+	
+	#content .table {
+		border: 3px solid #1b2b79;
+	}
+	#content .table dl + dl {
+		border-top: 2px solid #1b2b79;
+	}
+	#content .table dt {
+		box-sizing: border-box;
+		display: table-cell;
+		width: 180px;
+		padding: 8px 18px;
+		text-align: left;
+		vertical-align: middle;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 1.7;
+		color: #1b2b79;
+	}
+	#content .table dd {
+		box-sizing: border-box;
+		display: table-cell;
+		width: 714px;
+		padding: 8px 25px;
+		vertical-align: middle;
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 1.7;
+		border-left: 2px solid #1b2b79;
+	}
+	
+	#content .functions {
+		padding: 10px 0;
+	}
+	#content .functions li + li {
+		margin-top: 12px;
+	}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+	i.icon {
+		width: 24px;
+		height: 24px;
+		margin-right: 8px;
+		background-size: 100% auto !important;
+	}
+	
+	nav.return {
+		width: 40px;
+		height: 40px;
+		right: 2px;
+		top: 2px;
+	}
+	
+	
+	#wrap > header {
+		position: relative;
+		padding-top: 84.375%;
+	}
+	
+	#wrap > header .logo {
+		position: absolute;
+		width: 48px;
+		height: 46px;
+		left: 6px;
+		top: 6px;
+		z-index: 10;
+	}
+	#wrap > header .budge {
+		position: absolute;
+		width: 110px;
+		height: 45px;
+		right: 6px;
+		top: 6px;
+		z-index: 10;
+		border: 1px solid #00a0e9;
+		border-radius: 4px;
+		overflow: hidden;
+		background: #fff;
+	}
+	#wrap > header .budge img {
+		width: 100%;
+		height: auto;
+	}
+	#visual {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: url(../img/sp/kv_mini.svg) 50% 0 no-repeat;
+		background-size: 100% auto;
+	}
+	#visual h1 {
+		position: absolute;
+		width: 94%;
+		height: 22%;
+		left: 3%;
+		top: 45%;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	#visual h1 a {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	#visual h2,
+	#visual .lead {
+		display: none;
+	}
+	
+	
+	
+	
+	
+	#wrap > footer {
+		position: relative;
+		padding: 56.25% 0 0;
+		margin: 20px 0 0;
+		text-align: center;
+		background: url(../img/sp/footer.svg) 50% 0 no-repeat;
+		background-size: 100% auto;
+	}
+	#wrap > footer .logo {
+		position: absolute;
+		display: block;
+		width: 48px;
+		height: 46px;
+		left: 50%;
+		bottom: 56px;
+		margin-left: -24px;
+	}
+	#wrap > footer p {
+		position: absolute;
+		width: 100%;
+		height: 20px;
+		left: 0;
+		bottom: 15px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		background: url(../img/copyright.svg) 50% 0 no-repeat;
+		background-size: 300px auto;
+	}
+
+
+
+
+
+	#content {
+		position: relative;
+		margin: 0 10px;
+		z-index: 60;
+	}
+	#content h1 {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		font-size: 0;
+	}
+	#content section {
+		position: relative;
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding: 24px 12px;
+		border: 2px solid #1b2b79;
+	}
+	#content section + section {
+		margin-top: 10px;
+	}
+	#content h1 + section {
+		margin-top: 10px;
+	}
+	
+	body.casestudy #content h1 {
+		margin-top: -18%;
+		padding-top: 29.68%;
+		background: url(../img/sp/pagetitle_casestudy.svg) 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	body.ourplan #content h1 {
+		margin-top: -30%;
+		padding-top: 33.87%;
+		background: url(../img/sp/pagetitle_ourplan.svg) 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	body.contact #content h1 {
+		margin-top: -30%;
+		padding-top: 34.83%;
+		background: url(../img/sp/pagetitle_contact.svg) 0 0 no-repeat;
+		background-size: 100% auto;
+	}
+	
+	
+	
+	#content figure.main {
+		text-align: center;
+	}
+	#content figure.fig {
+		text-align: center;
+		margin: 0 0 32px;
+	}
+	#content figure.main img {
+		width: 100%;
+		width: calc(100% - 2px);
+		height: auto;
+		border: 1px solid #dcdddd;
+	}
+	#content figure.fig img {
+		width: 100%;
+		height: auto;
+	}
+	
+	#content .company {
+		margin: 0 0 30px;
+	}
+	#content .company dt {
+		width: 46px;
+		height: 20px;
+		margin: 0 auto;
+	}
+	#content .company dd {
+		margin: 12px 0 24px;
+		text-align: center;
+		color: #1b2b79;
+		font-size: 24px;
+	}
+	#content .company h2 {
+		font-weight: 300;
+	}
+	
+	
+	
+	#content .plan-name {
+		margin: 0 0 30px;
+	}
+	#content .plan-name dt {
+		height: 20px;
+		text-align: center;
+	}
+	#content .plan-name dt img {
+		width: auto;
+		height: 20px;
+	}
+	#content .plan-name dd {
+		margin: 12px 0 24px;
+		text-align: center;
+		color: #1b2b79;
+		font-size: 24px;
+	}
+	#content .plan-name h2 {
+		font-weight: 300;
+	}
+	#content .plan-name p {
+		font-size: 17px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 1.5;
+	}
+	#content .plan-name figure.fig {
+		margin-top: 25px;
+	}
+	
+	
+	#content .plan-name dl:after {
+		content: "";
+		display: block;
+		height: 120px;
+		margin: 0 0 20px;
+	}
+	#content .plan-name.serverless dl:after {
+		background: url(../img/chara_serverless.svg) 62% 50% no-repeat;
+		background-size: auto 120px;
+	}
+	#content .plan-name.server dl:after {
+		background: url(../img/chara_server.svg) 62% 50% no-repeat;
+		background-size: auto 120px;
+	}
+	#content .plan-name.container dl:after {
+		background: url(../img/chara_container.svg) 62% 50% no-repeat;
+		background-size: auto 120px;
+	}
+	
+	
+	
+	
+	
+	
+	#content .plan h4 {
+		text-align: center;
+		font-size: 16px;
+		font-weight: 700;
+		color: #1b2b79;
+	}
+	#content .plan-detail > dl > dt {
+		color: #1b2b79;
+		margin: 0 0 10px;
+		padding: 0 0 6px;
+		font-size: 16px;
+		border-bottom: 1px solid #1b2b79;
+	}
+	#content .plan-detail .mark li {
+		font-size: 14px;
+	}
+	#content .plan-detail > dl + dl {
+		margin-top: 20px;
+	}
+	
+	#content .plan-detail dl dl + dl {
+		margin-top: 10px;
+	}
+	#content .plan-detail dl dl dt {
+		float: left;
+		width: 40%;
+		font-size: 14px;
+	}
+	#content .plan-detail dl dl dt:after {
+		content: "　/";
+	}
+	#content .plan-detail dl dl dd {
+		float: right;
+		width: 60%;
+		font-size: 20px;
+		font-weight: 300;
+		font-family: Lato, sans-serif;
+		text-align: right;
+	}
+	#content .plan-detail dl dl dd span {
+		position: relative;
+		display: inline-block;
+		color: #1b2b79;
+	}
+	#content .plan-detail dl dl dd span:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 4px;
+		left: 0;
+		bottom: 0;
+	}
+	#content .plan-detail dl dl:after {
+		clear: both;
+		content: "";
+		display: block;
+	}
+	#content .plan-detail dl dl dd span em {
+		position: relative;
+		z-index: 11;
+	}
+	
+	
+	
+	
+	#content article {
+	}
+	#content article + article {
+		margin-top: 30px;
+	}
+	#content article h3 {
+		margin: 0 0 24px;
+		font-size: 20px;
+		font-weight: 300;
+		text-align: center;
+		color: #1b2b79;
+	}
+	#content article h4 {
+		margin: 0 0 10px;
+		line-height: 1.5;
+		font-size: 16px;
+		font-weight: 700;
+		color: #1b2b79;
+	}
+	#content article h5 {
+		margin: 0 0 12px;
+		font-size: 16px;
+		font-weight: 700;
+		color: #1b2b79;
+	}
+	#content article p {
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 1.5;
+	}
+	#content article p + p {
+		margin-top: 1em;
+	}
+	#content article p em {
+		color: #1b2b79;
+	}
+	
+	
+	#content article.notice p {
+		font-size: 15px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 1.5;
+	}
+	
+	
+	
+	#content ul.box {
+		padding: 10px 0 0;
+		border-top: 1px solid #1b2b79;
+	}
+	#content ul.box li {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.5;
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+	#content ul.box li:before {
+		content: "・";
+		text-indent: 0;
+	}
+	#content ul.box li + li {
+		margin-top: 5px;
+	}
+	
+	
+	#content ul.mark li {
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 1.5;
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+	#content ul.mark li:before {
+		content: "・";
+		text-indent: 0;
+	}
+	#content ul.mark li + li {
+		margin-top: 5px;
+	}
+	
+	
+	#content .table {
+	}
+	#content .table dl + dl {
+		margin-top: 20px;
+	}
+	#content .table dt {
+		margin: 0 0 8px;
+		padding: 0 0 5px;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 1.5;
+		color: #1b2b79;
+		border-bottom: 1px solid #1b2b79;
+	}
+	#content .table dd {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.7;
+	}
+
+	#content .functions {
+		padding: 8px 0;
+	}
+	#content .functions li + li {
+		margin-top: 8px;
+	}
+}
+

@@ -88,7 +88,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dd>
 						<dl>
 							<dt>月額</dt>
-							<dd><span><em>¥500</em></span></dd>
+							<dd><span><em>¥500~</em></span></dd>
 						</dl> 
 						</dd>
 					</dl>

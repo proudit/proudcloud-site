@@ -13,6 +13,18 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 <script src="js/jquery.min.js"></script>
 <script src="js/vivus.min.js"></script>
 <script src="js/top.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-custum.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
 <?php
 if($layout_mode == "pc") {
 ?>
@@ -28,7 +40,40 @@ else {
 </head>
 
 <body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Site Menu</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Top</a>
+            </li>
+            <li>
+                <a href="#feature" onclick = $("#menu-close").click(); >Feature</a>
+            </li>
+            <li>
+                <a href="#ourplan" onclick = $("#menu-close").click(); >Services</a>
+			</li>
+            <li>
+                <a href="#option" onclick = $("#menu-close").click(); >Options</a>
+            </li>
+            <li>
+                <a href="#casestudy" onclick = $("#menu-close").click(); >Casestudy</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav>
+
 <div id="wrap">
+
+<section id="top">
+</section>
 
 	<header>
 		<div class="logo"><a href="https://www.proudit.jp/"><img src="img/logo.svg" alt="Proudit Inc."></a></div>
@@ -40,7 +85,6 @@ else {
 			<div class="lead">
 			AWSをベースにしたを導入から運用までトータルサポートします。
 			</div>
-
 
 <?php
 if($layout_mode == "pc") {
@@ -182,10 +226,9 @@ $(window).on("load",function(){
 <?php
 }
 ?>
+
+
 	
-
-
-
 	<section id="feature">
 		<div id="feature-motion"></div>
 		<div class="bg"></div>
@@ -263,8 +306,6 @@ else {
 ?>
 		</map>
 	</section>
-	
-	
 	
 	
 	<section id="ourplan">
@@ -431,12 +472,49 @@ else {
 		<span class="chara"></span>
 	</section>
 
-
-
 	<footer>
 		<a href="https://www.proudit.jp/" class="logo"><img src="img/logo.svg" alt="Proudit Inc."></a>	
 		<p>&copy; Copyright Proudit Inc. All Rights Reserved.</p>
 	</footer>
 </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
 </body>
 </html>

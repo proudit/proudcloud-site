@@ -80,7 +80,6 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 							<li>24/365サービス監視設定</li>
 							<li>ドメイン取得代行</li>
 							<li>SSL取得代行</li>
-							<li>負荷測定</li>
 						</ul>
 						</dd>
 					</dl>

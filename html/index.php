@@ -432,6 +432,14 @@ else {
 					<i></i>
 				</a>
 			</li>
+			<li class="casestudy3">
+				<a href="casestudy/proudcloud/">
+					<h4>プラウディット<br>株式会社</h4>
+					<span class="container"></span>
+					<strong><img src="img/logo/proudcloud.png" alt="Proudcloudサービスページ"></strong>
+					<i></i>
+				</a>
+			</li>
 		</ul>
 	</section>
 	

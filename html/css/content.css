@@ -171,6 +171,9 @@ i.icon.route53 {
 i.icon.elb {
 	background: url(../img/icon/elb.svg) 50% 50% no-repeat;
 }
+i.icon.alb {
+	background: url(../img/icon/alb.svg) 50% 50% no-repeat;
+}
 i.icon.scaling {
 	background: url(../img/icon/scaling.svg) 50% 50% no-repeat;
 }
@@ -179,6 +182,12 @@ i.icon.cache {
 }
 i.icon.iam {
 	background: url(../img/icon/iam.svg) 50% 50% no-repeat;
+}
+i.icon.ecs {
+	background: url(../img/icon/ecs.png) 50% 50% no-repeat;
+}
+i.icon.acm {
+	background: url(../img/icon/acm.png) 50% 50% no-repeat;
 }
 
 

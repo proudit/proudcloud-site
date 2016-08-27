@@ -42,23 +42,19 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 				<dt><img src="../img/label_company.svg" alt="Company"></dt>
 				<dd><h2>株式会社プラウディット</h2></dd>
 				</dl>
-				<figure class="main"><img src="img/main.jpg" alt=""></figure>
+				<figure class="main"><img src="img/main.png" alt=""></figure>
 			</div>
 			
 			<article>
 				<h3>導入背景</h3>
-				<p>ProudBlogとは株式会社プラウディットが運営しているブログサイトです。社員が普段の業務を通じて経験した技術や出来事を主に発信しています。</p>
+				<p>本サービス(プラウドクラウド）サイト。端末振り分け、アニメーションコントロールなどをphpをで制御。動的サイトのDevOps化が課題</p>
 			</article>
 			
 			<article>
-				<h4>サーバーレスで運用負荷を大幅ダウン</h4>
-				<p>コンテンツの配置場所としては、安全で耐久性がありスケーラビリティに優れたS3を利用しています。サーバーではなくクラウドストレージを利用することで今まで行っていたサーバーに対するping(死活監視)やapacheなどのプロセス監視が不要となりました。また、サーバーを利用していると、どこかで発生するOSやミドルウェアのバージョンアップやセキュリティ脆弱性対応などの作業からも解放されるため、運用負荷が大幅に減りました。</p>
-			</article>
-			
-			<article>
-				<h4>GitHubでソース管理、CircleCIで自動デプロイ</h4>
-				<p>GitHubでソースのバージョン管理を行うこと複数の人が並行して記事の投稿/修正ができるようになりました。また、GitHubと親和性の高いCircleCIを利用することでコンテンツの自動デプロイが可能となり、GitHubへコミットするだけで記事の投稿〜公開ができるようになりました。</p>
-				<p>また、リポジトリ内で本番用とステージング用のブランチを分けることで、「ステージングで校正チェック→本番用へマージして公開」という方法を行っています。</p>
+				<h4>コンテナ(Docker)+Github+CircleCIで運用を自動化</h4>
+				<p>同社ブログサイト同様、「GitHub+CircleCIで自動デプロイ」化することで、運用フローを統一し、全体運用コストを下げることに成功。</p>
+				<p>肝となる「AWS ECS」のコンテナ管理機能は、新コンテナへのアップデート指示を出すだけで、ホストリソース計算の上、新コンテナ配置、LB登録、旧コンテナ廃棄を全自動で実施してくれる。</p>
+				<p>これによりサイト修正・機能追加・辞令追加など、ビジネスタスクに集中することが出来るようになった。</p>
 			</article>
 		</section>
 		
@@ -83,17 +79,19 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 				<div class="table">
 				<dl>
 					<dt>サイト名</dt>
-					<dd>ProudBlog</dd>
+					<dd>ProudCloud</dd>
 				</dl>
 				<dl>
 					<dt>使用プラン</dt>
-					<dd><a href="../../plan/serverless/">サーバレスプラン</a></dd>
+					<dd><a href="../../plan/container/">コンテナプラン</a></dd>
 				</dl>
 				<dl>
 					<dt>AWSプロダクト</dt>
 					<dd>
 					<ul class="functions">
-						<li><i class="icon s3"></i>S3</li>
+						<li><i class="icon ecs"></i>ECS</li>
+						<li><i class="icon alb"></i>ALB</li>
+						<li><i class="icon acm"></i>ACM</li>
 						<li><i class="icon route53"></i>Route53</li>
 						<li><i class="icon iam"></i>IAM</li>
 					</ul>

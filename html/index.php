@@ -47,25 +47,25 @@ else {
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Site Menu</a>
+                <a href="#top"  onclick = $("#menu-close").click(); >サイトメニュー</a>
             </li>
             <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Top</a>
+                <a href="#top" onclick = $("#menu-close").click(); >トップ</a>
             </li>
             <li>
-                <a href="#feature" onclick = $("#menu-close").click(); >Feature</a>
+                <a href="#feature" onclick = $("#menu-close").click(); >特徴</a>
             </li>
             <li>
-                <a href="#ourplan" onclick = $("#menu-close").click(); >Services</a>
+                <a href="#ourplan" onclick = $("#menu-close").click(); >プラン</a>
 			</li>
             <li>
-                <a href="#option" onclick = $("#menu-close").click(); >Options</a>
+                <a href="#option" onclick = $("#menu-close").click(); >オプション</a>
             </li>
             <li>
-                <a href="#casestudy" onclick = $("#menu-close").click(); >Casestudy</a>
+                <a href="#casestudy" onclick = $("#menu-close").click(); >事例</a>
             </li>
             <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                <a href="#contact" onclick = $("#menu-close").click(); >お問い合わせ</a>
             </li>
         </ul>
     </nav>

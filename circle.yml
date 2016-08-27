@@ -18,3 +18,4 @@ deployment:
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push toguma/proudcloud 
+      - script/ecs-deploy -c proudcloud-site -n proudcloud -i toguma/proudcloud:latest

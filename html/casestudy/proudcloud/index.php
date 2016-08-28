@@ -47,14 +47,20 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			
 			<article>
 				<h3>導入背景</h3>
-				<p>本サービス(プラウドクラウド）サイト。端末振り分け、アニメーションコントロールなどをphpをで制御。動的サイトのDevOps化が課題</p>
+				<p>本サービス(プラウドクラウド）サイト。</p>
+				<p>端末振り分け、アニメーションコントロールなどをphpをで制御。動的サイトのDevOps化が課題</p>
+			</article>
+
+			<article>
+				<h4>Dockerコンテナ運用にAWS ECSを採用</h4>
+				<p>「<a href="https://aws.amazon.com/jp/ecs/">AWS ECS</a>」のデプロイ機構は、ホストリソース計算、新コンテナ配置、LB登録、旧コンテナ廃棄が全自動。</p>
+				<p>AWSの新LB機能「<a href="https://aws.amazon.com/jp/elasticloadbalancing/applicationloadbalancer/">ALB</a>」のダイナミックポート機能で最小1台ホストに複数のコンテナ配置が可能になったことで、省コスト&無停止デプロイが実現、また最新プロトコルHTTP/2にも対応したことで通信速度の向上も図れた。</p>
 			</article>
 			
 			<article>
-				<h4>コンテナ(Docker)+Github+CircleCIで運用を自動化</h4>
+				<h4>コンテナ(Docker)+Github+CircleCIでDevOpsを実現</h4>
 				<p>同社ブログサイト同様、「GitHub+CircleCIで自動デプロイ」化することで、運用フローを統一し、全体運用コストを下げることに成功。</p>
-				<p>肝となる「AWS ECS」のコンテナ管理機能は、新コンテナへのアップデート指示を出すだけで、ホストリソース計算の上、新コンテナ配置、LB登録、旧コンテナ廃棄を全自動で実施してくれる。</p>
-				<p>これによりサイト修正・機能追加・辞令追加など、ビジネスタスクに集中することが出来るようになった。</p>
+				<p>いわゆる「DevOps」構成により、サイト更新・機能追加・事例追加など、ビジネスタスクに集中することが出来るようになった。</p>
 			</article>
 		</section>
 		

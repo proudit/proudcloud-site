@@ -59,15 +59,33 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 				<ul class="mark">
 					<li>素早いスケーラビリティ</li>
 					<li>柔軟なコンテナ配置</li>
-					<li>容易な構成複製</li>
+					<li>高可用性</li>
 					<li>少ないオーバーヘッド</li>
-					<li>安全・安定のイメージ共有</li>
 				</ul>
 			</article>
 			
 			<article class="scene">
 				<h3>利用シーン</h3>
-				<p>In placeデプロイ、 Blue/Greenデプロイ、ゲーム系システム、一時的なスポットシステム</p>
+				<p>Dockerによる開発・運用を前提としたシステム。</p>
+				<p>ホスト構築〜目的のDevOpsフロー構築までを統合サポート</p>
+			</article>
+
+			<article class="plan container">
+				<h3>基本構成 / AWS参考費用</h3>
+					<dl>
+						<dt>システム例</dt>
+						<dd>
+						<ul class="mark">
+							<li>Appコンテナ x 4 (php/perl/RoR/Go など)</li>
+							<li>ECSホスト(t2.medium) x 2</li>
+							<li>ELB/ALB x 1</li>
+							<li>ElastiCache(redis) x 1</li>
+							<li>RDS(mysql) mAZ x 1</li>
+							<li>リソース監視(CloudWatch)</li>
+							<li>ログ保存(Fluentd+S3)</li>
+						</ul>
+						</dd>
+					</dl>
 			</article>
 			
 			<article class="plan container">
@@ -77,8 +95,10 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dt>サービス内容</dt>
 						<dd>
 						<ul class="mark">
-							<li>標準監視付き</li>
-							<li>1コンテナ(0.5~1vCPU/Mem256MB)</li>
+							<li>AWS ECSホスト設計・構築</li>
+							<li>DevOps環境構築コンサル・設計・構築</li>
+							<li>フルマネージドサポート</li>
+							<p><b>※ AWS利用費用は別途</b></p>
 						</ul>
 						</dd>
 					</dl>
@@ -87,8 +107,12 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dt>価格</dt>
 						<dd>
 						<dl>
-							<dt>月額</dt>
-							<dd><span><em>¥500~</em></span></dd>
+							<dt>初期費用</dt>
+							<dd><span><em>¥150,000</em></span></dd>
+						</dl> 
+						<dl>
+							<dt>月額費用</dt>
+							<dd><span><em>¥50,000</em></span></dd>
 						</dl> 
 						</dd>
 					</dl>

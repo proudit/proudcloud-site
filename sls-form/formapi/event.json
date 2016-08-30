@@ -1,0 +1,36 @@
+{
+    "body": {
+        "company": "proudit Inc.",
+        "name": "小熊健",
+        "tel": "+81424245113",
+        "email": "toguma@proudit.jp",
+        "type": "サポートについて",
+        "question": "こんにちは。<br />\r\n僕は<br />\r\n健です。"
+    },
+    "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "ja,en-US;q=0.8,en;q=0.6",
+        "Cache-Control": "max-age=0",
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-Country": "JP",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Host": "q901y0691e.execute-api.ap-northeast-1.amazonaws.com",
+        "Origin": "http://localhost",
+        "Referer": "http://localhost/contact/confirm.php",
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36",
+        "Via": "1.1 30bda6a1f8b2b7b7bd26798487194cda.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "xo-PL6Uvw9lWDEpZs2OPeoDEHxBvQGQrM4_DlrhPSUysVWsNRHQNPg==",
+        "X-Forwarded-For": "218.219.246.72, 204.246.186.15",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "method": "POST",
+    "params": {},
+    "query": {}
+}

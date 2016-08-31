@@ -52,7 +52,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 					
 					<dl>
 						<dt><em>*</em>お名前</dt>
-						<dd><div class="preview">山田太郎</div></dd>
+						<dd><div class="preview">伊東</div></dd>
 					</dl>
 					
 					<dl>

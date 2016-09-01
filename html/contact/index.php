@@ -96,11 +96,11 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 					<dl>
 						<dt><em>*</em>お問い合わせ内容</dt>
 						<dd>
-						<select name="type" class="validate[required]">
-							<option value="" selected>選択してください</option>
-							<option value="1">金額について</option>
-							<option value="2">サポートについて</option>
-							<option value="3">その他</option>
+						<select name="type">
+							<option value="選択なし" selected>選択してください</option>
+							<option value="金額について">金額について</option>
+							<option value="サポートについて">サポートについて</option>
+							<option value="その他">その他</option>
 						</select>
 						</dd>
 					</dl>

@@ -1,4 +1,5 @@
 <?php include("../include/func.php"); ?>
+
 <!doctype html>
 <html>
 <head>
@@ -11,6 +12,7 @@
 window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 </script>
 <script src="../js/jquery.min.js"></script>
+
 <link rel="stylesheet" href="../css/content.css">
 <link rel="stylesheet" href="css/form.css">
 </head>
@@ -34,7 +36,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 
 	<div id="content">
 		<h1>Contact</h1>
-	
+
 		<section>
 			<nav class="return"><a href="../">TOP PAGE</a></nav>
 			
@@ -43,60 +45,57 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			</article>
 			
 			<div class="form">
-				<form method="post" action="./complete.php" id="contact-form">
+				<form method="post" action="https://q901y0691e.execute-api.ap-northeast-1.amazonaws.com/dev/formapi" id="contact-form">
 				<div class="inner">
 					<dl>
 						<dt>会社名</dt>
-						<dd><div class="preview">プラウディット株式会社</div></dd>
+						<dd><div class="preview"><?php printf(htmlspecialchars($_POST['company'])); ?></div></dd>
+						<input type="hidden" name="company" value="<?php printf(htmlspecialchars($_POST['company'])); ?>">
 					</dl>
 					
 					<dl>
 						<dt><em>*</em>お名前</dt>
-						<dd><div class="preview">伊東</div></dd>
+						<dd><div class="preview"><?php printf(htmlspecialchars($_POST['name'])); ?></div></dd>
+						<input type="hidden" name="name" value="<?php printf(htmlspecialchars($_POST['name'])); ?>">
 					</dl>
 					
 					<dl>
 						<dt><em>*</em>電話番号</dt>
-						<dd><div class="preview">03-1234-5678</div></dd>
+						<dd><div class="preview"><?php printf(htmlspecialchars($_POST['tel'])); ?></div></dd>
+						<input type="hidden" name="tel" value="<?php printf(htmlspecialchars($_POST['tel'])); ?>">
 					</dl>
 					
 					<dl>
 						<dt><em>*</em>メールアドレス</dt>
-						<dd><div class="preview">foo@example.com</div></dd>
+						<dd><div class="preview"><?php printf(htmlspecialchars($_POST['email'])); ?></div></dd>
+						<input type="hidden" name="email" value="<?php printf(htmlspecialchars($_POST['email'])); ?>">
 					</dl>
 					
 					<dl>
 						<dt><em>*</em>お問い合わせ内容</dt>
-						<dd><div class="preview">サポートについて</div></dd>
+						<dd><div class="preview"><?php printf(htmlspecialchars($_POST['type'])); ?></div></dd>
+						<input type="hidden" name="type" value="<?php printf(htmlspecialchars($_POST['type'])); ?>">
 					</dl>
 					
 					<dl>
 						<dt><em>*</em>ご質問内容</dt>
 						<dd>
 						<div class="preview">
-						はじめまして。<br>
-						サーバレスプランについて検討しております。
-						詳しい料金体系をお聞きしたいのですが、どうすればよいでしょうか。
+						<?php printf(nl2br(htmlspecialchars($_POST['question'])))    ; ?>
 						</div>
 						</dd>
+						<input type="hidden" name="question" value="<?php printf(htmlspecialchars($_POST['question'])); ?>">
 					</dl>
 				</div>
 				<div class="submission">
 					<input type="submit">
 					<a href="javascript:void(0)" onclick="history.back();">戻る</a>
-					<a href="javascript:void(0)" onclick="document.getElementById('contact-form').submit();">送信する</a>
+					<a href="javascript:void(0)" id="send" onclick="document.getElementById('contact-form')    .submit();">送信する</a>
 				</div>
 				</form>
 			</div>
 		</section>
-		
-		
-	
-	
 	</div>
-
-
-
 
 	<footer>
 		<a href="https://www.proudit.jp/" class="logo"><img src="../img/logo.svg" alt="Proudit Inc."></a>	

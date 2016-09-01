@@ -1,0 +1,7 @@
+    # http -> https  rewrite
+    RewriteEngine On
+
+    RewriteCond %{HTTP:X-Forwarded-Port} !^443$
+    RewriteCond %{HTTP_USER_AGENT} !^ELB-HealthChecker
+    RewriteRule ^(.*)?$ https://%{HTTP_HOST}$1 [R=301,L]
+    # http -> https  rewrite [end]

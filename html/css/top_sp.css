@@ -837,8 +837,9 @@ body {
 
 
 #wrap #casestudy {
-	height: 510px;
+	min-height: 510px;
 	margin-top: -60px;
+	padding-bottom: 10px;
 }
 #casestudy .bg {
 }
@@ -904,13 +905,12 @@ body {
 #casestudy ul li + li {
 	margin-left: -2px;
 }
-#casestudy ul li:nth-child(4n + 1) {
+
+#casestudy ul li:nth-child(2n + 1) {
 	margin-left: 0;
 }
 #casestudy ul li:nth-child(1),
-#casestudy ul li:nth-child(2),
-#casestudy ul li:nth-child(3),
-#casestudy ul li:nth-child(4) {
+#casestudy ul li:nth-child(2) {
 	margin-top: 0;
 }
 

@@ -10,6 +10,7 @@ machine:
 dependencies:
   override:
     - docker info
+    - cp .htaccess html/.
     - docker build -t toguma/proudcloud .
 
 test:

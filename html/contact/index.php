@@ -183,6 +183,19 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
     						</div>
     						</p>
     						
+   <script> 
+$('#agree').change(function() {
+    // チェックが入っていたら有効化
+    if ( $(this).is(':checked') ){ 
+        // ボタンを有効化
+        $('#form-submit').prop('disabled', false);
+    } else { 
+        // ボタンを無効化
+        $('#form-submit').prop('disabled', true); 
+    }
+});
+   </script>
+
       						<!-- サブミットボタン -->
     						<button data-remodal-action="confirm" class="remodal-confirm">OK</button>
 						</dd>					        
@@ -190,14 +203,13 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 					</div>
 				<div class="submission">
 					<input type="submit">
-					<a href="javascript:void(0)" onclick="document.getElementById('contact-form').submit();">内容を確認する</a>
+				    <button id="form-submit" disabled="disabled">内容を確認する</button>
 				</div>
 				</form>
 			</div>
 		</section>
 	
 	</div>
-
 
 	<footer>
 		<a href="https://www.proudit.jp/" class="logo"><img src="../img/logo.svg" alt="Proudit Inc."></a>	

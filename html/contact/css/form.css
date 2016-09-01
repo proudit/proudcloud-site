@@ -395,6 +395,26 @@
 		margin-left: 10px;
 	}
 	
+	#content .submission button {
+		box-sizing: border-box;
+		display: inline-block;
+		width: 130px;
+		padding: 15px 0;
+		font-size: 15px;
+		line-height: 1;
+		color: #fff;
+		background: #1b2b79;
+		text-decoration: none;
+		text-align: center;
+		
+		-moz-transition:    background 200ms linear;
+		-webkit-transition: background 200ms linear;
+		transition:         background 200ms linear;
+	}
+	
+	#content .submission button + button {
+		margin-left: 10px;
+	}
 	
 	
 	body.complete #content .submission {

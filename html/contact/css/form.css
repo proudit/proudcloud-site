@@ -159,7 +159,35 @@
 	}
 	
 	
+	#content .submission button {
+		display: inline-block;
+		width: 200px;
+		padding: 20px 0;
+		font-size: 20px;
+		line-height: 1;
+		color: #fff;
+		background: #1b2b79;
+		text-decoration: none;
+		text-align: center;
+		
+		-moz-transition:    background 200ms linear;
+		-webkit-transition: background 200ms linear;
+		transition:         background 200ms linear;
+	}
+	#content .submission button:hover {
+		background: #ef6c00;
+	}
+	#content .submission button + button {
+		margin-left: 20px;
+    }
+
+    #content .submission button:disabled {
+    background-image: none;
+    background-color: #ccc;
+    border-color: #ccc;
+    }
 	
+
 	body.complete #content .submission {
 		margin-top: 100px;
 	}
@@ -453,3 +481,4 @@
     border-radius: 5px;
     text-align: center;
 }
+

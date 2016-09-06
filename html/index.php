@@ -380,8 +380,8 @@ else {
 		</ul>
 		
 		
-		<h4 class="service">各プランに追加可能なオプションとサービス内容</h4>
-		<h4 class="tool">ツールのご紹介</h4>
+		<h4 class="service">各プランに追加可能なオプションと連携サービス内容</h4>
+		<h4 class="tool">連携可能ツールのご紹介</h4>
 		<span class="tool"></span>
 	</section>
 	

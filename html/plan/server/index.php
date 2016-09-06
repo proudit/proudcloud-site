@@ -43,8 +43,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 				<dd><h2>サーバープラン</h2></dd>
 				</dl>
 				<p>EC2をベースとして<br class="soft">利用した仮想サーバプラン。<br>
-				AWS EC2RDS/Elasticache<br class="soft">/DynamoDB..etc.短時間で<br class="soft">	スペック変更が行えるため、<br>
-				サービスの成長に合わせた<br class="soft">スケールアップが可能です。</p>
+				AWS EC2/RDS/Elasticache/DynamoDB..etcなど多彩な組み合わせに対応<br></p>
 				<figure class="fig">
 <?php if($layout_mode == "pc") { ?>
 				<img src="img/fig_pc.svg" alt="" width="550" height="370">
@@ -69,6 +68,8 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			<article class="scene">
 				<h3>利用シーン</h3>
 				<p>オンプレミスからの移行、 社内システムとのVPC接続、スモールスタートシステム</p>
+                <br><br>
+                <p>安心・安定の3wayシステム(Web/App/DB)を手堅く運用したい
 			</article>
 			
 			<article class="plan server">
@@ -76,7 +77,18 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 				<div class="plan-detail">
 					<dl>
 						<dt>サービス内容</dt>
-						<dd><p>フルマネージドサービス<br>(完全運用代行、24/365監視/1次復旧あり)付き</p></dd>
+						<dd>
+                          <p>AWSコンサル・設計(冗長化支援)<br>
+                          <p>フルマネージドサービス
+                             <ul class="mark" >
+                              <li>完全運用代行
+                              <li>セキュリティパッチ
+                              <li>24/365監視/自動復旧
+                              <li>自動バックアップシステム
+                              <li>etc..ご要望に応じて
+                             </ul>
+                          </p>
+                        </dd>
 					</dl>
 					
 					<dl>
@@ -84,15 +96,21 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dd>
 						<dl>
 							<dt>初期費用</dt>
-							<dd><span><em>¥30,000</em></span></dd>
+							<dd><span><em>¥100,000〜</em></span></dd>
 						</dl> 
 						<dl>
-							<dt>月額</dt>
-							<dd><span><em>¥20,000</em></span></dd>
+							<dt>月額費用</dt>
+							<dd><span><em>¥30,000〜</em></span></dd>
+                            <br><b>※ AWS利用費用は別途</b>
+                            <br><b>※ 台数毎の費用ではなくシステム・サービス毎の費用</b>
 						</dl> 
 						</dd>
 					</dl>
 				</div>
+<br>
+<br>
+<br>
+<h3><a href="/contact" >お申し込みはこちら</a></h3>
 			</article>
 		</section>
 		

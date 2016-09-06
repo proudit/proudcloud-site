@@ -43,6 +43,9 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 				<dd><h2>サーバレスプラン</h2></dd>
 				</dl>
 				<p>AWS S3/AWS<br class="soft">CloudFront/AWS Lambdaを<br>フルに利用した業界最先端な<br class="soft">完全サーバレスサービスプラン。</p>
+                <p>　</p>
+				<p>サーバレス＝サーバがないから落ちない。低価格。</p>
+
 				<figure class="fig">
 <?php if($layout_mode == "pc") { ?>
 				<img src="img/fig_pc.svg" alt="" width="920" height="320">
@@ -55,17 +58,25 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			<article class="feature">
 				<h3>特性</h3>
 				<ul class="mark">
-					<li>独自ドメイン</li>
-					<li>SSLサイト</li>
+					<li>独自ドメイン *1</li>
+					<li>無料SSL *2</li>
 					<li>CDNによる高負荷対応</li>
-					<li>高い安定性</li>
-					<li>問い合わせ・アンケートフォーム機能あり</li>
+					<li>問い合わせフォーム、Email登録機能付き</li>
 				</ul>
+<br>
+<b>*1 メインは持ち込み、新規取得どちらでも対応</b><br>
+<b>*2 無料SSLはAWS Certificate Managerにて提供</b><br>
 			</article>
 			
 			<article class="scene">
 				<h3>利用シーン</h3>
-				<p>コーポレートサイト、一時的なキャンペーンサイト、その他静的コンテンツと問い合わせフォーム、申し込みフォームで構成されたサイト。</p>
+                   <p>静的なデザインHTMLページ＋簡易フォーム搭載サイト
+                   <br>
+				   <br>キャンペーンサイト
+                   <br>ランディングページ
+                   <br>コーポレートサイト
+                   <br>etc..
+                   </p>
 			</article>
 			
 			<article class="plan serverless">
@@ -76,12 +87,14 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dt>サービス内容</dt>
 						<dd>
 						<ul class="mark">
-							<li>導入サポート(メール＋TEL）</li>
-							<li>24/365サービス監視設定</li>
-							<li>ドメイン取得代行</li>
-							<li>SSL取得代行</li>
+							<li>フォーム機能調整</li>
+							<li>HTML/フォーム連携(javascript) *3</li>
+							<li>URL監視</li>
+							<li>運用サポート(メール＋TEL）</li>
 						</ul>
 						</dd>
+                     <br>
+                     <p><b>*3 CSS,HTML自体はお客様にて準備</b><br>
 					</dl>
 					
 					<dl>
@@ -89,15 +102,20 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dd>
 						<dl>
 							<dt>初期費用</dt>
-							<dd><span><em>¥98,000</em></span></dd>
+							<dd><span><em>¥50,000</em></span></dd>
 						</dl> 
 						<dl>
-							<dt>月額</dt>
+							<dt>月額費用</dt>
 							<dd><span><em>¥5,000</em></span></dd>
+                            <br><b>※ AWS利用費用は別途</b>
 						</dl> 
 						</dd>
 					</dl>
 				</div>
+<br>
+<br>
+<br>
+<h3><a href="/contact" >お申し込みはこちら</a></h3>
 			</article>
 		</section>
 		

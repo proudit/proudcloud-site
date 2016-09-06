@@ -42,9 +42,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 				<dt><img src="../../img/smallicon_container.svg" alt="Container Plan"></dt>
 				<dd><h2>コンテナプラン</h2></dd>
 				</dl>
-				<p>Dockerコンテナ管理サービスAWS ECSを利用。<br>
-				仮想マシンと比べると<br class="soft">軽量で起動が早いためスケーラビリティに優れています。<br>
-				In placeやBlue/Greenといったデプロイ方法を行う場合に適しています。</p>
+				<p>Dockerコンテナ管理サービスAWS ECSをベースにした<br><b>DevOps環境ごと提供します。</b><br>
 				<figure class="fig">
 <?php if($layout_mode == "pc") { ?>
 				<img src="img/fig_pc.svg" alt="" width="390" height="390">
@@ -66,12 +64,13 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			
 			<article class="scene">
 				<h3>利用シーン</h3>
-				<p>Dockerによる開発・運用を前提としたシステム。</p>
-				<p>ホスト構築〜目的のDevOpsフロー構築までを統合サポート</p>
+				<p>Docker基盤構築、運用でお困りの方</p>
+				<p>DevOpsフロー構築までを統合サポートしたい方</p>
+				<p>開発、ビジネスタスクに集中したい方</p>
 			</article>
 
 			<article class="plan container">
-				<h3>基本構成 / AWS参考費用</h3>
+				<h3>基本構成</h3>
 					<dl>
 						<dt>システム例</dt>
 						<dd>
@@ -83,9 +82,11 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 							<li>RDS(mysql) mAZ x 1</li>
 							<li>リソース監視(CloudWatch)</li>
 							<li>ログ保存(Fluentd+S3)</li>
+							<li>転送量200GB</li>
 						</ul>
 						</dd>
 					</dl>
+                            <br><b>※ 上記基本構成の場合、AWS利用費用は 約$400〜450</b>
 			</article>
 			
 			<article class="plan container">
@@ -98,7 +99,6 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 							<li>AWS ECSホスト設計・構築</li>
 							<li>DevOps環境構築コンサル・設計・構築</li>
 							<li>フルマネージドサポート</li>
-							<p><b>※ AWS利用費用は別途</b></p>
 						</ul>
 						</dd>
 					</dl>
@@ -108,15 +108,19 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dd>
 						<dl>
 							<dt>初期費用</dt>
-							<dd><span><em>¥150,000</em></span></dd>
+							<dd><span><em>¥150,000〜</em></span></dd>
 						</dl> 
 						<dl>
 							<dt>月額費用</dt>
-							<dd><span><em>¥50,000</em></span></dd>
+							<dd><span><em>¥50,000〜</em></span></dd>
+                            <br><b>※ AWS利用費用は別途</b>
 						</dl> 
 						</dd>
 					</dl>
 				</div>
+<br>
+<br>
+<h3><a href="/contact" >お申し込みはこちら</a></h3>
 			</article>
 		</section>
 		

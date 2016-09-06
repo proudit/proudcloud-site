@@ -110,7 +110,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 <br>
 <br>
 <br>
-<h3><a href="/contact" >お申し込みはこちら</a></h3>
+<h3><a href="/contact/" >お申し込みはこちら</a></h3>
 			</article>
 		</section>
 		

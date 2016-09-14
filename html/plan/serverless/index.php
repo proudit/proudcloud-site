@@ -43,8 +43,8 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 				<dd><h2>サーバレスプラン</h2></dd>
 				</dl>
 				<p>AWS S3/AWS<br class="soft">CloudFront/AWS Lambdaを<br>フルに利用した業界最先端な<br class="soft">完全サーバレスサービスプラン。</p>
-                <p>　</p>
-				<p>サーバレス＝サーバがないから落ちない。低価格。</p>
+                <br>
+                <p><font size="6" color="#778899">高負荷対応、フォーム機能あり、なのに月額無料!?</font></p>
 
 				<figure class="fig">
 <?php if($layout_mode == "pc") { ?>
@@ -56,27 +56,22 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			</div>
 			
 			<article class="feature">
-				<h3>特性</h3>
+				<h3>機能</h3>
 				<ul class="mark">
 					<li>独自ドメイン *1</li>
 					<li>無料SSL *2</li>
 					<li>CDNによる高負荷対応</li>
-					<li>問い合わせフォーム、Email登録機能付き</li>
+					<li>問い合わせフォーム機能</li>
 				</ul>
-<br>
-<b>*1 メインは持ち込み、新規取得どちらでも対応</b><br>
-<b>*2 無料SSLはAWS Certificate Managerにて提供</b><br>
 			</article>
 			
 			<article class="scene">
 				<h3>利用シーン</h3>
-                   <p>静的なデザインHTMLページ＋簡易フォーム搭載サイト
                    <br>
-				   <br>キャンペーンサイト
-                   <br>ランディングページ
-                   <br>コーポレートサイト
-                   <br>etc..
-                   </p>
+                   <p>ランディングページ + 案内メール登録フォーム</p>
+                   <p>コーポレートサイト + 問い合わせフォーム</p>
+                   <p>高アクセスが予想されるサイト</p>
+                   <p>運用費用はなるべく抑えたい</p>
 			</article>
 			
 			<article class="plan serverless">
@@ -87,14 +82,17 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dt>サービス内容</dt>
 						<dd>
 						<ul class="mark">
-							<li>フォーム機能調整</li>
-							<li>HTML/フォーム連携(javascript) *3</li>
+							<li>ドメイン/SSL取得代行</li>
+							<li>DNS設定</li>
+							<li>フォームバックエンドAPI構築</li>
+							<li>HTML/フォーム設置(javascript) *3</li>
 							<li>URL監視</li>
-							<li>運用サポート(メール＋TEL）</li>
 						</ul>
 						</dd>
                      <br>
-                     <p><b>*3 CSS,HTML自体はお客様にて準備</b><br>
+                     <p><b>*1 ドメインは持ち込み、新規取得どちらでも対応</b></p>
+                     <p><b>*2 無料SSLは<a href="https://aws.amazon.com/jp/certificate-manager/" target="_blank">AWS Certificate Managerにて提供</a></b></p>
+                     <p><b>*3 CSS,HTML自体はお客様にて準備</b></p><br>
 					</dl>
 					
 					<dl>
@@ -102,12 +100,13 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dd>
 						<dl>
 							<dt>初期費用</dt>
-							<dd><span><em>¥50,000</em></span></dd>
+							<dd><span><em>¥98,000〜</em></span></dd>
 						</dl> 
 						<dl>
 							<dt>月額費用</dt>
-							<dd><span><em>¥5,000</em></span></dd>
-                            <br><b>※ AWS利用費用は別途</b>
+							<dd><span><em>¥0</em></span></dd>
+                            <br><b>※ データ転送料などAWS利用費用は別途</b>
+                            <br><b>※ 別途サポートオプションあり</b>
 						</dl> 
 						</dd>
 					</dl>
@@ -120,8 +119,6 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 		</section>
 		
 	</div>
-
-
 
 
 	<footer>

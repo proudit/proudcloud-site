@@ -98,8 +98,9 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dd>
 						<select name="type">
 							<option value="選択なし" selected>選択してください</option>
+							<option value="正式お見積り依頼">お見積り依頼</option>
 							<option value="金額について">金額について</option>
-							<option value="サポートについて">サポートについて</option>
+							<option value="サービスについて">サービスについて</option>
 							<option value="その他">その他</option>
 						</select>
 						</dd>

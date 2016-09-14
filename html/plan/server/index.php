@@ -25,7 +25,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			<h1><a href="../../">Proud Cloud</a></h1>
 			<h2>AWSサーバ運用サービス - プラウドクラウド</h2>
 			<div class="lead">
-			AWSをベースにしたを導入から運用までトータルサポートします。
+			AWSをベースにしたを導入から運用までトータルサポートします。<br>
 			</div>
 		</div>
 	</header>
@@ -42,8 +42,10 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 				<dt><img src="../../img/smallicon_server.svg" alt="Server Plan"></dt>
 				<dd><h2>サーバープラン</h2></dd>
 				</dl>
-				<p>EC2をベースとして<br class="soft">利用した仮想サーバプラン。<br>
-				AWS EC2/RDS/Elasticache/DynamoDB..etcなど多彩な組み合わせに対応<br></p>
+				<p>EC2をベースとして<br class="soft">利用したサーバマネージドプラン。<br>
+				AWS EC2/RDS/Elasticache/DynamoDB..etc、どんなサービスとの組み合わせにも対応<br></p>
+                <br><br>
+                <p><font size="6" color="#778899">10台以上、フル冗長構成で最大月額50%OFF！！</font></p>
 				<figure class="fig">
 <?php if($layout_mode == "pc") { ?>
 				<img src="img/fig_pc.svg" alt="" width="550" height="370">
@@ -56,20 +58,19 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			<article class="feature">
 				<h3>特性</h3>
 				<ul class="mark">
-					<li>弾力性のあるウェブスケール</li>
+					<li>弾力性のあるスケール構成化対応</li>
 					<li>完全なインスタンス制御</li>
-					<li>柔軟なホスティング</li>
-					<li>高い可用性</li>
-					<li>堅牢なネットワーキング</li>
-					<li>利用の手軽さ</li>
+					<li>柔軟なマネージドサービス</li>
+					<li>高い可用性、フル冗長構成へのコンサルティング</li>
+					<li>豊富なセキュリティ対応、対策</li>
 				</ul>
 			</article>
 			
 			<article class="scene">
 				<h3>利用シーン</h3>
-				<p>オンプレミスからの移行、 社内システムとのVPC接続、スモールスタートシステム</p>
+				<p>オンプレミス、他社クラウドからの移行、大規模システム、社内基幹システム最適</p>
                 <br><br>
-                <p>安心・安定の3wayシステム(Web/App/DB)を手堅く運用したい
+                <p>安心・安定の3wayシステム(Web/App/DB)を手堅く運用
 			</article>
 			
 			<article class="plan server">
@@ -78,12 +79,12 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 					<dl>
 						<dt>サービス内容</dt>
 						<dd>
-                          <p>AWSコンサル・設計(冗長化支援)<br>
-                          <p>フルマネージドサービス
+                          <p>AWSサポート・コンサルティングサービス<br>
+                          <p>サーバフルマネージドサービス(Linux/Win)
                              <ul class="mark" >
                               <li>完全運用代行
-                              <li>セキュリティパッチ
-                              <li>24/365監視/自動復旧
+                              <li>セキュリティ対応
+                              <li>24/365監視/自動復旧/エスカレーション
                               <li>自動バックアップシステム
                               <li>etc..ご要望に応じて
                              </ul>
@@ -96,13 +97,14 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dd>
 						<dl>
 							<dt>初期費用</dt>
-							<dd><span><em>¥100,000〜</em></span></dd>
+							<dd><span><em>¥50,000〜</em></span></dd>
 						</dl> 
 						<dl>
 							<dt>月額費用</dt>
-							<dd><span><em>¥30,000〜</em></span></dd>
+							<dd><span><em>¥20,000/host</em></span></dd>
                             <br><b>※ AWS利用費用は別途</b>
-                            <br><b>※ 台数毎の費用ではなくシステム・サービス毎の費用</b>
+                            <br><b>※ 10台以上月額費用20%OFF!!</b>
+                            <br><b>※ フル冗長構成化対応後はさらに月額費用30%OFF!!</b>
 						</dl> 
 						</dd>
 					</dl>

@@ -42,7 +42,9 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 				<dt><img src="../../img/smallicon_container.svg" alt="Container Plan"></dt>
 				<dd><h2>コンテナプラン</h2></dd>
 				</dl>
-				<p>Dockerコンテナ管理サービスAWS ECSをベースにした<br><b>DevOps環境ごと提供します。</b><br>
+				<p>AWS ECSをベースにしたDockerコンテナフルマネージド運用サービス<br>
+                <br>
+                <p><font size="6" color="#778899">DevOps環境の設計〜運用までトータルサポート</font></p><br>
 				<figure class="fig">
 <?php if($layout_mode == "pc") { ?>
 				<img src="img/fig_pc.svg" alt="" width="390" height="390">
@@ -65,8 +67,8 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			<article class="scene">
 				<h3>利用シーン</h3>
 				<p>Docker基盤構築、運用でお困りの方</p>
-				<p>DevOpsフロー構築までを統合サポートしたい方</p>
-				<p>開発、ビジネスタスクに集中したい方</p>
+				<p>DevOpsフロー構築まで含めた統合サポートご希望の方</p>
+				<p>アプリ開発、ビジネスタスクに集中したい方</p>
 			</article>
 
 			<article class="plan container">
@@ -75,11 +77,11 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dt>システム例</dt>
 						<dd>
 						<ul class="mark">
-							<li>Appコンテナ x 4 (php/perl/RoR/Go など)</li>
+							<li>Web/Appコンテナ x 4 (php/perl/RoR/Go など)</li>
 							<li>ECSホスト(t2.medium) x 2</li>
 							<li>ELB/ALB x 1</li>
-							<li>ElastiCache(redis) x 1</li>
-							<li>RDS(mysql) mAZ x 1</li>
+							<li>ElastiCache(t2.small) x 1</li>
+							<li>RDS(t2.small) mAZ x 1</li>
 							<li>リソース監視(CloudWatch)</li>
 							<li>ログ保存(Fluentd+S3)</li>
 							<li>転送量200GB</li>
@@ -112,12 +114,13 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						</dl> 
 						<dl>
 							<dt>月額費用</dt>
-							<dd><span><em>¥50,000〜</em></span></dd>
+							<dd><span><em>¥100,000/system</em></span></dd>
                             <br><b>※ AWS利用費用は別途</b>
 						</dl> 
 						</dd>
 					</dl>
 				</div>
+<br>
 <br>
 <br>
 <h3><a href="/contact/" >お申し込みはこちら</a></h3>

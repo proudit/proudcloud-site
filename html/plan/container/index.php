@@ -110,11 +110,11 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 						<dd>
 						<dl>
 							<dt>初期費用</dt>
-							<dd><span><em>¥150,000〜</em></span></dd>
+							<dd><span><em>¥120,000〜</em></span></dd>
 						</dl> 
 						<dl>
 							<dt>月額費用</dt>
-							<dd><span><em>¥100,000/system</em></span></dd>
+							<dd><span><em>¥98,000/system</em></span></dd>
                             <br><b>※ AWS利用費用は別途</b>
 						</dl> 
 						</dd>

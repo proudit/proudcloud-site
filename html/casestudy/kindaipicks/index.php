@@ -40,7 +40,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			<div class="company">
 				<dl>
 				<dt><img src="../img/label_company.svg" alt="Company"></dt>
-				<dd><h2>近畿大学様</h2></dd>
+				<dd><h2>近畿大学 Kindai Picks</h2></dd>
 				</dl>
 				<figure class="main"><img src="img/main.png" alt=""></figure>
 			</div>

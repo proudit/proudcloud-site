@@ -40,7 +40,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 			<div class="plan-name server">
 				<dl>
 				<dt><img src="../../img/smallicon_server.svg" alt="Server Plan"></dt>
-				<dd><h2>サーバープラン</h2></dd>
+				<dd><h2>サーバプラン</h2></dd>
 				</dl>
 				<p>EC2をベースとして<br class="soft">利用したサーバマネージドプラン。<br>
 				AWS EC2/RDS/Elasticache/DynamoDB..etc、どんなサービスとの組み合わせにも対応<br></p>

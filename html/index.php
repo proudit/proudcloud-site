@@ -13,6 +13,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 <script src="js/jquery.min.js"></script>
 <script src="js/vivus.min.js"></script>
 <script src="js/top.js"></script>
+<script src="js/google.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

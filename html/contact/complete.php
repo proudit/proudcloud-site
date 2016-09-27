@@ -11,6 +11,7 @@
 window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 </script>
 <script src="../js/jquery.min.js"></script>
+<script src="../js/google.js"></script>
 <link rel="stylesheet" href="../css/content.css">
 <link rel="stylesheet" href="css/form.css">
 </head>

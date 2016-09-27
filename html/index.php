@@ -440,6 +440,14 @@ else {
 					<i></i>
 				</a>
 			</li>
+			<li class="casestudy4">
+				<a href="casestudy/kindaipicks/">
+					<h4>近畿大学</h4>
+					<span class="server"></span>
+					<strong><img src="img/logo/kindai.png" alt="近畿大学様「Kindai Picks」"></strong>
+					<i></i>
+				</a>
+			</li>
 		</ul>
 	</section>
 	

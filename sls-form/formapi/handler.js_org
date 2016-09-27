@@ -12,37 +12,21 @@ console.log('Received event:', JSON.stringify(event, null, 2));
 
  var eParams = {
       Destination: {
-          ToAddresses: [event.body.email],
-          CcAddresses: ["info@proudit.jp"]
+          ToAddresses: ["info@proudit.jp"]
       },
       Message: {
           Body: {
               Text: {
-                  Data: 
-                  event.body.company + "  " + event.body.name + " 様" + "\n"
-                  + "\n\n"
-                  + "[以下 自動応答メール]\n\n"
-                  + "この度は「Proud Cloud」へのお問い合わせ、誠にありがとうございます。\n"
-                  + "以下内容につきましては、弊社担当にて確認次第、早々に回答いたします。\n\n"
-                  + "お問い合わせ内容\n"
-                  + "=============================================\n"
-				  + "会社名：" + event.body.company + "\n"
+                  Data: "会社名：" + event.body.company + "\n"
                   + "お名前：" + event.body.name + "\n"
                   + "電話番号：" + event.body.tel + "\n"
                   + "メールアドレス：" + event.body.email + "\n"
                   + "問い合わせ内容：" + event.body.type + "\n"
                   + "ご質問内容：" + "\n" + event.body.question + "\n"
-                  + "=============================================\n"
-                  + "\n\n"
-                  + "以上でございます。\n"
-                  + "\n"
-                  + "\n"
-                  + "\n"
-                  + "運営会社 株式会社プラウディット"
               }
           },
           Subject: {
-              Data: "「ProudCloud」へのお問い合わせありがとうございます。"
+              Data: "ProudCloudのフォームから問い合わせがありました。"
           }
       },
       Source: "info@proudit.jp"

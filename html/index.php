@@ -13,6 +13,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
 <script src="js/jquery.min.js"></script>
 <script src="js/vivus.min.js"></script>
 <script src="js/top.js"></script>
+<script src="js/google.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -335,7 +336,7 @@ else {
 		</script>
 		<h3>用途に合わせて選べる3つのプラン</h3>
 		<ul>
-			<li class="serverless"><a href="plan/serverless/"><h4>サーバーレスプラン</h4><strong>AWSLambda等をフルに利用した業界最先端な完全サーバレスサービスプラン。</strong><i></i></a></li>
+			<li class="serverless"><a href="plan/serverless/"><h4>サーバレスプラン</h4><strong>AWSLambda等をフルに利用した業界最先端な完全サーバーレスサービスプラン。</strong><i></i></a></li>
 			<li class="container"><a href="plan/container/"><h4>コンテナプラン</h4><strong>Dockerコンテナ管理サービスAWS ECSを利用。</strong><i></i></a></li>
 			<li class="server"><a href="plan/server/"><h4>サーバプラン</h4><strong>AWS EC2をベースとして利用した仮想サーバプラン。</strong><i></i></a></li>
 		</ul>
@@ -437,6 +438,14 @@ else {
 					<h4>プラウディット<br>株式会社</h4>
 					<span class="container"></span>
 					<strong><img src="img/logo/proudcloud.png" alt="Proudcloudサービスページ"></strong>
+					<i></i>
+				</a>
+			</li>
+			<li class="casestudy4">
+				<a href="casestudy/kindaipicks/">
+					<h4>近畿大学</h4>
+					<span class="server"></span>
+					<strong><img src="img/logo/kindai.png" alt="近畿大学様「Kindai Picks」"></strong>
 					<i></i>
 				</a>
 			</li>

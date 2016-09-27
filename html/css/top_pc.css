@@ -118,7 +118,7 @@ body {
 	position: absolute;
 	width: 200px;
 	height: 86px;
-	right: 60px;
+	right: 20px;
 	top: 20px;
 	z-index: 100;
 	border: 1px solid #00a0e9;
@@ -526,7 +526,7 @@ body {
 }
 #ourplan ul li.serverless h4 {
 	background: url(../img/serverless.svg) 50% 10% no-repeat;
-	background-size: auto 26px;
+	background-size: auto 29px;
 }
 #ourplan ul li.container h4 {
 	background: url(../img/container.svg) 50% 10% no-repeat;

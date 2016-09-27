@@ -10,7 +10,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build -t toguma/proudcloud .
+    - docker build -t toguma/proudcloud:$CIRCLE_BRANCH .
 
 test:
   override:
@@ -27,5 +27,5 @@ deployment:
     branch: staging
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push toguma/proudcloud:staging
-      - script/ecs-deploy -c proudcloud-site -n staging-proudcloud -i toguma/proudcloud:staging -r ap-northeast-1 -t 180
+      - docker push toguma/proudcloud:$CIRCLE_BRANCH
+      - script/ecs-deploy -c proudcloud-site -n staging-proudcloud -i toguma/proudcloud:$CIRCLE_BRANCH -r ap-northeast-1 -t 180

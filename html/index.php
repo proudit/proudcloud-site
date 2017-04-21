@@ -449,14 +449,7 @@ else {
 					<i></i>
 				</a>
 			</li>
-			<li class="casestudy5">
-				<a href="casestudy/proudblog/">
-					<h4>プラウディット<br>株式会社</h4>
-					<span class="serverless"></span>
-					<strong><img src="img/logo/proudblog.png" alt="ProudBlog"></strong>
-					<i></i>
-				</a>
-			</li>
+			
 		</ul>
 	</section>
 	

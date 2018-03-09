@@ -485,7 +485,7 @@ else {
 		</script>
 		<h3>お問い合わせ</h3>
 		<p>まずはご相談ください！</p>
-		<a class="tel"  href="tel:0363806571">03-6380-6571</a>
+		<a class="tel"  href="tel:05031963596">050-3196-3596</a>
 		<a class="form" href="contact/">お問い合わせフォーム</a>
 		<span class="chara"></span>
 	</section>

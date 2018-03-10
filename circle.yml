@@ -8,11 +8,11 @@ machine:
     - docker
 
 dependencies:
-  post:
+  override:
     - docker build -t toguma/proudcloud .
 
 test:
-  post:
+  override:
     - bundle
     - bundle exec rspec
 

@@ -18,8 +18,3 @@ deployment:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push toguma/proudcloud 
       - script/ecs-deploy -c proudcloud-site -n proudcloud-ssl -i toguma/proudcloud:latest -r ap-northeast-1 -t 180
-    branch: staging
-    commands:
-      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push toguma/proudcloud
-      - script/ecs-deploy -c proudcloud-site -n staging-proudcloud -i toguma/proudcloud -r ap-northeast-1 -t 180

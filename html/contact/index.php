@@ -177,7 +177,7 @@ window.LAYOUT_MODE = "<?php echo $layout_mode; ?>";
     						<h2>7.お問い合せ</h2>
     						<p>
     						株式会社プラウディット<br>
-    						TEL ： 03-6380-6571<br>
+    						TEL ： 050-3196-3596<br>
     						Mail ： info@proudit.jp<br>
     						株式会社プラウディット<br>
     						代表取締役 小熊健<br>

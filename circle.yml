@@ -11,11 +11,6 @@ dependencies:
   override:
     - docker build -t toguma/proudcloud .
 
-test:
-  override:
-    - bundle
-    - bundle exec rspec
-
 deployment:
   prod:
     branch: master

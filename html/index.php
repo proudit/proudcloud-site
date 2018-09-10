@@ -449,7 +449,7 @@ else {
 					<i></i>
 				</a>
 			</li>
-			<li class="casestudy4">
+			<li class="casestudy5">
 				<a href="casestudy/TVSpecialSite/">
 					<h4>某メディア関連企業</h4>
 					<span class="server"></span>
@@ -457,7 +457,14 @@ else {
 					<i></i>
 				</a>
 			</li>
-			
+			<li class="casestudy6">
+				<a href="casestudy/worldwide-customer-site/">
+					<h4>某クリーナー販売企業 日本法人</h4>
+					<span class="server"></span>
+					<strong><img src="img/logo/customer_site.png" alt="製品登録、製品サポートサイト"></strong>
+					<i></i>
+				</a>
+			</li>		
 		</ul>
 	</section>
 	
